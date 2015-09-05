@@ -33,7 +33,7 @@ chown -R www-data:www-data /var/www
 127.0.0.1	site.loc
 127.0.0.1	site2.loc
 ```
-#### Создаем виртуальные хосты
+### apache
 Так как апач будет работать в свзяке с nginx, меняем порты у апача
 
 В /etc/apache2/ports.conf меняем `Listen 80` на:
@@ -48,3 +48,4 @@ NameVirtualHost 127.0.0.1:8887
 ```
 # a2ensite site.conf
 ```
+### nginx
