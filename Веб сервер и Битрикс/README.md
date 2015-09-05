@@ -64,6 +64,10 @@ NameVirtualHost 127.0.0.1:8887
 ```
 # ln -s /etc/nginx/sites-available/site.loc /etc/nginx/sites-enabled/site.loc
 ```
+nginx.conf
+```
+client_max_body_size 12m;
+```
 ### php.ini
 - /etc/php5/apache2/php.ini
 ```
