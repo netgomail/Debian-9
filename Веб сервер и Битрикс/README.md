@@ -28,3 +28,8 @@
 ```
 chown -R www-data:www-data /var/www
 ```
+Добавляем в /etc/hosts наши сайты
+```
+127.0.0.1	site.loc
+127.0.0.1	site2.loc
+```
