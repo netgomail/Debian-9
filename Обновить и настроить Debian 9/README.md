@@ -59,7 +59,7 @@ CPU Driver (non-free репозиторий)
 # cd /etc/fonts/infinality/
 # bash infctl.sh setstyle
 ```
-Выбираем 3 пункт (Linux)
+- Выбираем 3 пункт (Linux)
 
 ```
 # nano /etc/profile.d/infinality-settings.sh
@@ -71,6 +71,7 @@ CPU Driver (non-free репозиторий)
 
 ```
 # echo 'deb http://ppa.launchpad.net/noobslab/themes/ubuntu vivid main' >> /etc/apt/sources.list.d/arcmactheme.list
-#
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D530E028F59EAE4D
+# apt-get update && apt-get install arc-theme mbuntu-y-icons-v5
 ```
-
+- Настройки -> Диспетчер окон и Внешний вид выбрать установленную тему и иконки
