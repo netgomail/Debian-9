@@ -41,6 +41,10 @@ chown -R www-data:www-data /var/www
 Listen 127.0.0.1:8887
 NameVirtualHost 127.0.0.1:8887
 ```
+Создать хост 
+```
+- /etc/apache2/sites-available/[site.conf](https://github.com/netgomail/Debian-9/blob/master/%D0%92%D0%B5%D0%B1%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%B8%20%D0%91%D0%B8%D1%82%D1%80%D0%B8%D0%BA%D1%81/site.conf)
+```
 Активировать хост
 ```
 # a2ensite site.conf
