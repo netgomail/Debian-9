@@ -11,5 +11,7 @@
 ```
 Установка Nginx
 ```
-apt-get install nginx libapache2-mod-rpaf
+# service apache2 stop
+# apt-get install nginx libapache2-mod-rpaf
 ```
+#### Создание виртуальных хостов
