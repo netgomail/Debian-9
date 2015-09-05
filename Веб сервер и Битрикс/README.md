@@ -34,6 +34,14 @@ chown -R www-data:www-data /var/www
 127.0.0.1	site2.loc
 ```
 ### apache
+Снять ограничение на размер стека pcre.recursion_limit
+
+Добавить в файл `/etc/init.d/apache2` строчку `ulimit -s unlimited`.Далее делаем рестарт демона и апача:
+```
+# systemctl daemon-reload
+# service apache2 restart
+```
+
 Так как апач будет работать в свзяке с nginx, меняем порты у апача
 
 В /etc/apache2/ports.conf меняем `Listen 80` на:
@@ -59,5 +67,9 @@ NameVirtualHost 127.0.0.1:8887
 ### php.ini
 - /etc/php5/apache2/php.ini
 ```
-qq
+short_open_tag = On
+opcache.revalidate_freq=0
+memory_limit = 384M
+max_input_vars = 12000
+upload_max_filesize = 8M
 ```
