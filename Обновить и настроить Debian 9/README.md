@@ -53,18 +53,18 @@ CPU Driver (non-free репозиторий)
 # apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E985B27B
 # apt-get update && apt-get install fontconfig-infinality
 ```
-- Настройка
+Настройка
 
 ```
 # cd /etc/fonts/infinality/
 # bash infctl.sh setstyle
 ```
-- Выбираем 3 пункт (Linux)
+Выбираем 3 пункт (Linux)
 
 ```
 # nano /etc/profile.d/infinality-settings.sh
 ```
-- меняем USE_STYLE="DEFAULT" на USE_STYLE="UBUNTU"
+меняем USE_STYLE="DEFAULT" на USE_STYLE="UBUNTU"
 
 CPU Driver (non-free репозиторий)
 
