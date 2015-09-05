@@ -1,4 +1,4 @@
-Изменить source.list
+#### `Изменить /etc/apt/sources.list`
 
 ```
 deb http://ftp.ru.debian.org/debian stretch main contrib non-free
