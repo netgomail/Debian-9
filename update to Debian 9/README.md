@@ -11,7 +11,7 @@ deb http://security.debian.org/ stretch/updates main contrib non-free
 deb-src http://security.debian.org/ stretch/updates main contrib non-free
 ```
 
-###### Выполнить команду в терминале
+##### Выполнить команду в терминале
 ```
 apt-get update && apt-get dist-upgrade
 ```
