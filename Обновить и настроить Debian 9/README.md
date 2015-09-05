@@ -18,10 +18,14 @@ apt-get update && apt-get dist-upgrade
 
 ### Команды
 
-Установка пакета
+##### Установка пакета
 
-```# dpkg -i package.deb```
+```
+# dpkg -i package.deb
+```
 
-Установка зависимостей для пакета
+##### Установка зависимостей для пакета
 
-```apt-get -f install```
+```
+# apt-get -f install
+```
