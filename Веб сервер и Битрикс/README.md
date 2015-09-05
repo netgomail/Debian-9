@@ -51,3 +51,8 @@ NameVirtualHost 127.0.0.1:8887
 ### nginx
 Создать хост 
 - /etc/nginx/sites-available/[site.loc](https://github.com/netgomail/Debian-9/blob/master/%D0%92%D0%B5%D0%B1%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%B8%20%D0%91%D0%B8%D1%82%D1%80%D0%B8%D0%BA%D1%81/site.loc)
+
+Активировать хост
+```
+# ln -s /etc/nginx/sites-available/site.loc /etc/nginx/sites-enabled/site.loc
+```
