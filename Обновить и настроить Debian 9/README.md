@@ -18,14 +18,57 @@ apt-get update && apt-get dist-upgrade
 
 ### Команды
 
-###### Установка пакета
+Установка пакета
 
 ```
 # dpkg -i package.deb
 ```
 
-###### Установка зависимостей для пакета
+Установка зависимостей для пакета
 
 ```
 # apt-get -f install
 ```
+
+Пакетный менеджер, что бы не вводить команды в терминале.Сразу устанавливает зависимости.
+
+```
+# apt-get install gdebi
+```
+
+### Настройка системы
+
+CPU Driver (non-free репозиторий)
+
+```
+# apt-get install intel-microcode
+```
+
+##### Настроить сглаживание шрифтов в Debian
+
+Добавляем репозиторий (в отдельный лист fontconfig.list) и ключ
+
+```
+# echo 'deb http://ppa.launchpad.net/no1wantdthisname/ppa/ubuntu vivid main' >> /etc/apt/sources.list.d/fontconfig.list
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E985B27B
+# apt-get update && apt-get install fontconfig-infinality
+```
+- Настройка
+
+```
+# cd /etc/fonts/infinality/
+# bash infctl.sh setstyle
+```
+- Выбираем 3 пункт (Linux)
+
+```
+# nano /etc/profile.d/infinality-settings.sh
+```
+- меняем USE_STYLE="DEFAULT" на USE_STYLE="UBUNTU"
+
+CPU Driver (non-free репозиторий)
+
+```
+
+```
+
