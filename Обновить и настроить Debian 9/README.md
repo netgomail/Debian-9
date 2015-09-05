@@ -64,11 +64,13 @@ CPU Driver (non-free репозиторий)
 ```
 # nano /etc/profile.d/infinality-settings.sh
 ```
-меняем USE_STYLE="DEFAULT" на USE_STYLE="UBUNTU"
+- Меняем USE_STYLE="DEFAULT" на USE_STYLE="UBUNTU"
+- Выходим из системы и заново заходим. Или перезагружаемся.
 
-CPU Driver (non-free репозиторий)
+##### Установка темы Arc-theme и иконки в стиле MacOS
 
 ```
-
+# echo 'deb http://ppa.launchpad.net/noobslab/themes/ubuntu vivid main' >> /etc/apt/sources.list.d/arcmactheme.list
+#
 ```
 
