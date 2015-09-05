@@ -15,3 +15,16 @@
 # apt-get install nginx libapache2-mod-rpaf
 ```
 #### Создание виртуальных хостов
+Создаем папки где будут находится сайты, сам сайт закачивать в папку public_html
+```
+# mkdir -p /var/www/{site.loc,site2.loc}/{public_html,logs,cgi,other,tmp}
+```
+Меняем права на созданные папки, а так же на файлы в каталогах (файлы 644, папки 755)
+```
+# find /var/www -type f -exec chmod 644 {} \; 
+# find /var/www -type d -exec chmod 755 {} \;
+```
+Меняем пользователя на имя от которого работает Apache
+```
+chown -R www-data:www-data /var/www
+```
