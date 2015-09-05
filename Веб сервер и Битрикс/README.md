@@ -14,7 +14,7 @@
 # service apache2 stop
 # apt-get install nginx libapache2-mod-rpaf
 ```
-#### Создание виртуальных хостов
+#### Структура каталогов с сайтами
 Создаем папки где будут находится сайты, сам сайт закачивать в папку public_html
 ```
 # mkdir -p /var/www/{site.loc,site2.loc}/{public_html,logs,cgi,other,tmp}
@@ -32,4 +32,16 @@ chown -R www-data:www-data /var/www
 ```
 127.0.0.1	site.loc
 127.0.0.1	site2.loc
+```
+#### Создаем виртуальные хосты
+Так как апач будет работать в свзяке с nginx, меняем порты у апача
+
+В /etc/apache2/ports.conf
+```
+Listen 127.0.0.1:8887
+NameVirtualHost 127.0.0.1:8887
+```
+Активировать хост
+```
+# a2ensite site.conf
 ```
