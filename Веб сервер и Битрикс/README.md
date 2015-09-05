@@ -77,3 +77,14 @@ memory_limit = 384M
 max_input_vars = 12000
 upload_max_filesize = 8M
 ```
+### mysql
+- /etc/mysql/my.cnf
+
+```
+innodb_buffer_pool_size=250M 
+innodb_additional_mem_pool_size=50M 
+innodb_file_io_threads=8 
+innodb_lock_wait_timeout=50 
+innodb_log_buffer_size=8M 
+innodb_flush_log_at_trx_commit=0 
+```
