@@ -76,6 +76,7 @@ opcache.revalidate_freq=0
 memory_limit = 384M
 max_input_vars = 12000
 upload_max_filesize = 8M
+realpath_cache_size = 8192k
 ```
 ### mysql
 - /etc/mysql/my.cnf
