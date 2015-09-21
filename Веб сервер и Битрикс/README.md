@@ -62,7 +62,7 @@ NameVirtualHost 127.0.0.1:8887
 
 Активировать хост
 ```
-# ln -s /etc/nginx/sites-available/site.loc /etc/nginx/sites-enabled/site.loc
+# ln -s /etc/nginx/sites-available/site.loc /etc/nginx/sites-enabled
 ```
 nginx.conf
 ```
@@ -88,4 +88,7 @@ innodb_file_io_threads=8
 innodb_lock_wait_timeout=50 
 innodb_log_buffer_size=8M 
 innodb_flush_log_at_trx_commit=0 
+```
+```
+SET sql_mode = '';
 ```
